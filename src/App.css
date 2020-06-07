@@ -1,0 +1,55 @@
+:root {
+  --mainYellow: #8ab81f;
+  --mainBlue: #0a3846;
+  --lightBlue: #29e9df;
+  --mainDark: #20252c;
+  --mainWhite: #f0eaea;
+ 
+}
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  background: url("wave4k.jpg") repeat !important;
+  color: var(--mainDark) !important;
+  
+}
+
+h3 {
+  font-family: 'Audiowide', cursive !important;
+  letter-spacing: 0.1rem !important;
+  font-size: 1em !important;
+}
+.text-title {
+  font-family: 'Audiowide', cursive;
+  letter-spacing: 0.1rem;
+}
+
+.text-blue {
+  color: var(--mainBlue);
+}
+
+.text-bright-blue {
+  color: var(--lightBlue);
+}
+
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
+  transition: all 300ms linear !important;
+}
+
+.btn-black:hover {
+  background: var(--mainDark) !important;
+  color: var(--mainWhite) !important;
+}
+
+.pack-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainYellow);
+}
