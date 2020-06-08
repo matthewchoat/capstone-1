@@ -17,7 +17,9 @@ body {
 h3 {
   font-family: 'Audiowide', cursive !important;
   letter-spacing: 0.1rem !important;
-  font-size: 1em !important;
+  font-size: 1.4rem !important;
+  margin-top: .5rem !important;
+  margin-bottom: .5rem !important;
 }
 .text-title {
   font-family: 'Audiowide', cursive;
@@ -26,6 +28,7 @@ h3 {
 
 .text-blue {
   color: var(--mainBlue);
+  font-family: 'Audiowide', cursive;
 }
 
 .text-bright-blue {

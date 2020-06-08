@@ -6,6 +6,7 @@ import { useProductState } from '../../../global-state';
 export default function ProductList() {
   const { productState } = useProductState();
   const { products } = productState;
+
   let productItems = products.map(product => (
     <ProductItem key={product.id} product={product} />
   ));

@@ -11,48 +11,49 @@ import {
 } from '../../../global-state';
 
 export default function ProductItem({ product }) {
-  const { id, title, img, price, inPack } = product;
+  const { id, title, img, price, category, inPack } = product;
   const { productActions } = useProductState();
   const { setProductDetails } = productActions;
   const { packActions } = usePackState();
   const { addItemToPack } = packActions;
   const { modalActions } = useModalState();
   const { openModal } = modalActions;
+
   return (
-    <Product className="col-9 mx-auto col-md-6 col-lg-3 my-3">
-      <div className="card">
-        <div
-          className="img-container p-5"
-          onClick={() => setProductDetails(product)}
-        >
-          <Link to="/details">
-            <img src={img} alt="product" className="card-img-top" />
-          </Link>
-          <button
-            className="pack-btn"
-            disabled={inPack}
-            onClick={() => {
-              addItemToPack(id);
-              openModal(id);
-            }}
+      <Product className="col-9 mx-auto col-md-6 col-lg-3 my-3">
+        <div className="card">
+          <div
+            className="img-container p-5"
+            onClick={() => setProductDetails(product)}
           >
-            {inPack ? (
-              <p className="text-capitalize m-0 p-0" disabled>
-                In Pack
-              </p>
-            ) : (
-              <i className="fa fa-suitcase" />
-            )}
-          </button>
+            <Link to="/details">
+              <img src={img} alt="product" className="card-img-top" />
+            </Link>
+            <button
+              className="pack-btn"
+              disabled={inPack}
+              onClick={() => {
+                addItemToPack(id);
+                openModal(id);
+              }}
+            >
+              {inPack ? (
+                <p className="text-capitalize m-0 p-0" disabled>
+                  In Pack
+                </p>
+              ) : (
+                <i className="fa fa-suitcase" />
+              )}
+            </button>
+          </div>
+          <div className="card-footer d-flex justify-content-between">
+            <p className="align-self-center mb-0">{title}</p>
+            <h5 className="text-blue font-italic mb-0">
+              <span className="mr-1">${price}</span>
+            </h5>
+          </div>
         </div>
-        <div className="card-footer d-flex justify-content-between">
-          <p className="align-self-center mb-0">{title}</p>
-          <h5 className="text-blue font-italic mb-0">
-            <span className="mr-1">${price}</span>
-          </h5>
-        </div>
-      </div>
-    </Product>
+      </Product>
   );
 }
 
@@ -62,7 +63,9 @@ ProductItem.propTypes = {
     img: PropTypes.string,
     title: PropTypes.string,
     price: PropTypes.number,
-    inPack: PropTypes.bool
+    inPack: PropTypes.bool,
+    category: PropTypes.string
+
   }).isRequired
 };
 

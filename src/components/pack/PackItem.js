@@ -30,9 +30,10 @@ export default function PackItem({ item }) {
           <span className="btn btn-black mx-1" style={{ cursor: 'auto' }}>
             {count}
           </span>
+          {count <= 9 ? (
           <span className="btn btn-black mx-1" onClick={() => inc(id)}>
             +
-          </span>
+          </span>) : <span className="btn btn-danger mx-1" disabled>No inventory remaining</span>}
         </div>
       </div>
       <div className="col-10 mx-auto col-lg-2">
