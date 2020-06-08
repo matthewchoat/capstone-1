@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Button } from '../../common/Button';
+import dropbg from './liquiddrops.jpg';
 
 import { useModalState } from '../../../global-state';
 
@@ -50,6 +51,6 @@ const ModalContainer = styled.div`
   justify-content: center;
   align-items: center;
   #modal {
-    background: var(--mainWhite);
+    background: url("${dropbg}") repeat;) !important;
   }
 `;

@@ -57,7 +57,7 @@ export const usePackActions = ({ productState, packState }, dispatch) => {
   const clearPack = pack => {
     dispatch({ type: CLEAR_CART });
     addTotals();
-    // Cheating because it's referencing product state objects directly
+
     pack.forEach(item => {
       item.inPack = false;
       item.count = 0;

@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import PayPal from './PayPal';
 
-export default function PackTotal({ packState, packActions }) {
+export default function PackTotal({ packState, packActions, history }) {
   const { pack, subtotal, tax, total } = packState;
   const { addTotals, clearPack } = packActions;
   // Updating Total value
@@ -33,6 +34,10 @@ export default function PackTotal({ packState, packActions }) {
             <span className="text-title">Total: </span>
             <strong>${total}</strong>
           </h5>
+        <PayPal 
+        total={total} 
+        clearPack={clearPack} 
+        history={history} />
         </div>
       </div>
     </div>

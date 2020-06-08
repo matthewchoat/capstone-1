@@ -13,10 +13,10 @@ export default function Pack() {
   content =
     pack.length > 0 ? (
       <>
-        <Title name="your" title="pack" />
+        <Title title="Your pack" />
         <PackColumns />
         <PackList pack={pack} />
-        <PackTotal packState={packState} packActions={packActions} />
+        <PackTotal packState={packState} packActions={packActions} history={pack.history} />
       </>
     ) : (
       <EmptyPack />
