@@ -1,5 +1,5 @@
-import { storeProducts, detailProduct } from '../data';
-
+import { detailProduct } from '../data';
+import storeProducts from '../storeProducts.json';
 import {
   SET_PRODUCT_DETAILS,
   ADD_ITEM_TO_CART,

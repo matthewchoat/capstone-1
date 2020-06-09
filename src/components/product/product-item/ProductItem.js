@@ -11,7 +11,7 @@ import {
 } from '../../../global-state';
 
 export default function ProductItem({ product }) {
-  const { id, title, img, price, category, inPack } = product;
+  const { id, title, img, price, inPack } = product;
   const { productActions } = useProductState();
   const { setProductDetails } = productActions;
   const { packActions } = usePackState();

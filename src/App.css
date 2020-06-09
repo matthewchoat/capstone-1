@@ -21,6 +21,16 @@ h3 {
   margin-top: .5rem !important;
   margin-bottom: .5rem !important;
 }
+
+h4 {
+  font-family: 'Open Sans', cursive !important;
+  letter-spacing: 0.1rem !important;
+  font-size: 1.4rem !important;
+  margin-top: .5rem !important;
+  margin-bottom: .5rem !important;
+  color: rgb(221, 77, 33);
+}
+
 .text-title {
   font-family: 'Audiowide', cursive;
   letter-spacing: 0.1rem;

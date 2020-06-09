@@ -1,5 +1,6 @@
 import React, { useReducer, createContext, useContext } from 'react';
-import { storeProducts, detailProduct } from '../data';
+import { detailProduct } from '../data';
+import storeProducts from '../storeProducts.json';
 import { useProductActions } from '../actions';
 import { SET_PRODUCT_DETAILS } from '../actions/types';
 

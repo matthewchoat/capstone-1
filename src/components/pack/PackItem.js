@@ -4,7 +4,7 @@ import { usePackState } from '../../global-state';
 export default function PackItem({ item }) {
   const { packActions } = usePackState();
   const { inc, dec, removeItemFromPack } = packActions;
-  const { id, title, img, price, total, count } = item;
+  const { id, title, img, price, total, count, quantity } = item;
   return (
     <div className="row my-2 text-capitalize text-center">
       <div className="col-10 mx-auto col-lg-2">
@@ -30,10 +30,10 @@ export default function PackItem({ item }) {
           <span className="btn btn-black mx-1" style={{ cursor: 'auto' }}>
             {count}
           </span>
-          {count <= 9 ? (
+          {count < quantity ? (
           <span className="btn btn-black mx-1" onClick={() => inc(id)}>
             +
-          </span>) : <span className="btn btn-danger mx-1" disabled>No inventory remaining</span>}
+          </span>) : <span className="btn btn-danger mx-1" disabled>Out of Stock</span>}
         </div>
       </div>
       <div className="col-10 mx-auto col-lg-2">

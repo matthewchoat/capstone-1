@@ -8,7 +8,7 @@ import Pack from './components/pack/Pack';
 import Default from './components/default/Default';
 import Navbar from './components/navbar/Navbar';
 import ProductList from './components/product/product-list/ProductList';
-
+import Admin from './components/admin/Admin';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={ProductList} />
+        <Route exact path="/admin" component={Admin} />
         <Route exact path="/details" component={Details} />
         <Route exact path="/pack" component={Pack} />
         <Route component={Default} />
