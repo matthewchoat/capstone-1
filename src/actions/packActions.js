@@ -17,6 +17,7 @@ export const usePackActions = ({ productState, packState }, dispatch) => {
     const tempProduct = tempProducts[index];
     tempProduct.inPack = true;
     tempProduct.count = 1;
+    tempProduct.quantity--
     const price = tempProduct.price;
     tempProduct.total = price;
     const tempPack = [...packState.pack, tempProduct];
@@ -46,6 +47,7 @@ export const usePackActions = ({ productState, packState }, dispatch) => {
     let removedProduct = tempProducts[index];
     removedProduct.inPack = false;
     removedProduct.count = 0;
+    removedProduct.quantity++;
     removedProduct.total = 0;
     dispatch({
       type: REMOVE_ITEM_FROM_CART,
@@ -72,6 +74,7 @@ export const usePackActions = ({ productState, packState }, dispatch) => {
     const index = tempPack.indexOf(selectedProduct);
     const product = tempPack[index];
     product.count += 1;
+    product.quantity--;
     product.total = product.count * product.price;
     dispatch({
       type: INCREMENT_ITEM,
@@ -86,6 +89,7 @@ export const usePackActions = ({ productState, packState }, dispatch) => {
     const index = tempPack.indexOf(selectedProduct);
     const product = tempPack[index];
     product.count -= 1;
+    product.quantity++;
     if (product.count === 0) {
       removeItemFromPack(id);
     } else {

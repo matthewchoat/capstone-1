@@ -18,9 +18,6 @@ export default function Navbar() {
             <h3>Liquid Longboards</h3>
           </Link>
         </li>
-        <li className="nav-item ml-5">
-          
-        </li>
       </ul>
 
       <Link to="/pack" className="ml-auto">
@@ -32,6 +29,7 @@ export default function Navbar() {
         </Button>
       </Link>
       <Link to="/Admin" className="nav-link">
+        
         <AdminButton>
           <span className="ml-auto">
             <i className="fa fa-archive" />

@@ -17,7 +17,7 @@ export default function Details() {
   const { modalActions } = useModalState();
   const { openModal } = modalActions;
 
-  const { id, title, img, price, manufacturer, info, inPack, category, count, quantity } = productDetails;
+  const { id, title, img, price, manufacturer, info, inPack, category, quantity, SerialNum } = productDetails;
   return (
     <div className="container py-5">
 
@@ -40,12 +40,10 @@ export default function Details() {
           <h3>TYPE: {category}</h3>
 
           <h4 className="text-blue">
-            <strong>
               PRICE: <span>$</span>
               {price}
-            </strong>
           </h4>
-          <h4>Quantity remaining: {inPack ? (quantity - count) : quantity}</h4>
+          <h4 className='text-red'>Quantity remaining: {quantity}</h4>
           <div>
             <Link to="/">
               <Button>Return to Shop</Button>
@@ -61,10 +59,13 @@ export default function Details() {
               {inPack ? 'In Pack' : 'Add to pack'}
             </Button>
           </div>
-          <p className="font-weight-bold mt-3 mb-0">
+          <p className="text-title font-weight-bold mt-3 mb-0">
+            SERIAL #: {SerialNum}
+          </p>
+          <p className="text-title font-weight-bold mt-3 mb-0">
             PRODUCT SUMMARY:
           </p>
-          <p className="text-muted lead">{info}</p>
+          <p className="mt-3 mb-0">{info}</p>
         </div>
       </div>
 

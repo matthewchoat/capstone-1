@@ -30,7 +30,7 @@ export default function PackItem({ item }) {
           <span className="btn btn-black mx-1" style={{ cursor: 'auto' }}>
             {count}
           </span>
-          {count < quantity ? (
+          {quantity > 0 ? (
           <span className="btn btn-black mx-1" onClick={() => inc(id)}>
             +
           </span>) : <span className="btn btn-danger mx-1" disabled>Out of Stock</span>}
