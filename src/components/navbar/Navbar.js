@@ -34,7 +34,9 @@ export default function Navbar() {
               <Link to="/" className="dropdown-item">Bearings</Link>
             </div>
           </div>
-
+        </li>
+        <li className="nav-item ml-5">
+          
         </li>
       </ul>
           
