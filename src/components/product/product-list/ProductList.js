@@ -12,7 +12,7 @@ export default function ProductList() {
 
   const handleChange = e => {
     let oldList = products.map(product => { 
-      return { title: product.title.toLowerCase(), id: product.id };
+      return { title: product.title.toLowerCase() };
     });
 
     if (e !== "") {
@@ -36,12 +36,11 @@ export default function ProductList() {
       <div className="py-5">
         <div className="container">
             <div>
-                filter: <input onChange={e => handleChange(e.target.value)} />
+                <strong>Search by Name:</strong> <input onChange={e => handleChange(e.target.value)} />
                 {filterDisplay.map((product, i) => (
                   <div key={i}>
                     <li>
                       {product.title} &nbsp;
-                      <span>{product.id}</span>
                     </li>
                   </div>
                 ))}
