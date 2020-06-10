@@ -33,7 +33,7 @@ export default function PackItem({ item }) {
           {quantity > 0 ? (
           <span className="btn btn-black mx-1" onClick={() => inc(id)}>
             +
-          </span>) : <span className="btn btn-danger mx-1" disabled>Out of Stock</span>}
+          </span>) : <span className="btn btn-danger mx-1" disabled>No Stock Left!</span>}
         </div>
       </div>
       <div className="col-10 mx-auto col-lg-2">

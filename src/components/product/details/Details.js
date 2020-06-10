@@ -50,7 +50,7 @@ export default function Details() {
             </Link>
             <Button
               pack
-              disabled={inPack}
+              disabled={inPack || quantity < 1}
               onClick={() => {
                 addItemToPack(id);
                 openModal(id);

@@ -9,7 +9,7 @@ import {
 } from '../../../global-state';
 
 export default function AdminItem({ product }) {
-  let { id, title, img, quantity, inPack } = product;
+  let { id, title, img, quantity, } = product;
   const { productActions } = useProductState();
   const { setProductDetails } = productActions;
   const addQuant = () =>  {product.quantity++};
@@ -26,7 +26,6 @@ export default function AdminItem({ product }) {
             </Link>
               <button
                 className="pack-btn"
-                disabled={inPack}
                 onClick={() => {addQuant(id)}}
               >
                 

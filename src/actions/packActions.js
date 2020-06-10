@@ -46,8 +46,8 @@ export const usePackActions = ({ productState, packState }, dispatch) => {
     const index = tempProducts.indexOf(getItem(id));
     let removedProduct = tempProducts[index];
     removedProduct.inPack = false;
+    removedProduct.quantity = removedProduct.quantity + removedProduct.count;
     removedProduct.count = 0;
-    removedProduct.quantity++;
     removedProduct.total = 0;
     dispatch({
       type: REMOVE_ITEM_FROM_CART,
@@ -62,6 +62,7 @@ export const usePackActions = ({ productState, packState }, dispatch) => {
 
     pack.forEach(item => {
       item.inPack = false;
+      item.quantity = item.quantity + item.count;
       item.count = 0;
       item.total = 0;
     });

@@ -11,7 +11,7 @@ import {
 } from '../../../global-state';
 
 export default function ProductItem({ product }) {
-  const { id, title, img, price, inPack } = product;
+  const { id, title, img, price, inPack, quantity } = product;
   const { productActions } = useProductState();
   const { setProductDetails } = productActions;
   const { packActions } = usePackState();
@@ -31,7 +31,7 @@ export default function ProductItem({ product }) {
             </Link>
             <button
               className="pack-btn"
-              disabled={inPack}
+              disabled={inPack || quantity < 1}
               onClick={() => {
                 addItemToPack(id);
                 openModal(id);
@@ -48,9 +48,16 @@ export default function ProductItem({ product }) {
           </div>
           <div className="card-footer d-flex justify-content-between">
             <p className="align-self-center mb-0">{title}</p>
-            <h5 className="text-blue font-italic mb-0">
-              <span className="mr-1">${price}</span>
-            </h5>
+            {quantity > 1 ? (
+                <h5 className="text-blue font-italic mb-0">
+                  <span className="mr-1">${price}</span>
+                </h5>
+              ) : (
+                <h5 className="text-red mb-0">
+                  <span className="mr-1">Sold Out!</span>
+                </h5>
+              )}
+
           </div>
         </div>
       </Product>

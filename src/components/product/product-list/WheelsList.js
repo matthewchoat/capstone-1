@@ -3,11 +3,12 @@ import ProductItem from '../product-item/ProductItem';
 import Title from '../../common/Title';
 import { useProductState } from '../../../global-state';
 
-export default function ProductList(searchTerm) {
+export default function WheelsList() {
   const { productState } = useProductState();
   const { products } = productState;
+  const filteredItem =  'Wheels';
 
-  const productItems = products.map(product => (
+  const productItems = products.filter(product => product.category === filteredItem).map(product => (
     <ProductItem key={product.id} product={product} />
   ));
   return (
@@ -15,12 +16,10 @@ export default function ProductList(searchTerm) {
       <div className="py-5">
         <div className="container">
 
-          <Title name="Welcome to" title="Liquid Longboards" />
+          <Title name="Browse our" title="Wheels" />
           <div className="row">{productItems}</div>
         </div>
       </div>
-
-
     </>
   );
 }
