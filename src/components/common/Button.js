@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
   text-transform: capitalize;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   background: transparent;
   border: 0.05rem solid var(--lightBlue);
   border-color: ${props =>

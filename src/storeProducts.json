@@ -197,7 +197,7 @@
   {
     "id": 14,
     "title": "Compound 9.5in White Longboard Truck",
-    "img": "img/Compound-9.5_-White-Longboard-Truck-_279935-front-US.jpg",
+    "img": "img/Compound-9.5_-White-Longboard-Truck-_279935-front-US.png",
     "price": 22,
     "size": 9.5,
     "manufacturer": "COMPOUND TRUCKS",
@@ -212,7 +212,7 @@
   {
     "id": 15,
     "title": "Compound 9.5in Reverse Matte Black Longboard Truck",
-    "img": "img/Compound-9.5-Reverse-Matte-Black-Longboard-Truck-_199866-front-US.jpg",
+    "img": "img/Compound-9.5-Reverse-Matte-Black-Longboard-Truck-_199866-front-US.png",
     "price": 22,
     "size": 9.5,
     "manufacturer": "CALIBER TRUCKS",
@@ -227,7 +227,7 @@
   {
     "id": 16,
     "title": "Sector 9 Gullwing Charger Black 10in Longboard Truck",
-    "img": "img/Sector-9-Gullwing-Charger-Black-10_-Longboard-Truck-_323852-front-US.jpg",
+    "img": "img/Sector-9-Gullwing-Charger-Black-10_-Longboard-Truck-_323852-front-US.png",
     "price": 25,
     "size": 10,
     "manufacturer": "SECTOR 9 SKATEBOARDS",
@@ -242,7 +242,7 @@
   {
     "id": 17,
     "title": "Sector 9 Gullwing Sidewinder 2 - 10in Skateboard Truck",
-    "img": "img/Sector-9-Gullwing-Sidewinder-2-10_-Blue-&-Orange-Skateboard-Truck-_282393-front-US.jpg",
+    "img": "img/Sector-9-Gullwing-Sidewinder-2-10_-Blue-&-Orange-Skateboard-Truck-_282393-front-US.png",
     "price": 30,
     "size": 10,
     "manufacturer": "SECTOR 9 SKATEBOARDS",
@@ -257,7 +257,7 @@
   {
     "id": 18,
     "title": "Gold Coast Cherry Bombs 60mm, 78a Red Cruiser Wheels",
-    "img": "img/Gold-Coast-Cherry-Bombs-60mm-78a-Red-Cruiser-Wheels-_334046-front-US.jpg",
+    "img": "img/Gold-Coast-Cherry-Bombs-60mm-78a-Red-Cruiser-Wheels-_334046-front-US.png",
     "price": 32,
     "size": 60,
     "manufacturer": "GOLD COAST LONGBOARDS",
@@ -272,7 +272,7 @@
   {
     "id": 19,
     "title": "OJ Mini Super Juice 55mm, 78a Green Cruiser Wheels",
-    "img": "img/OJ-Mini-Super-Juice-55mm-78a-Green-Cruiser-Wheels-_321668-front-US.jpg",
+    "img": "img/OJ-Mini-Super-Juice-55mm-78a-Green-Cruiser-Wheels-_321668-front-US.png",
     "price": 35,
     "size": 55,
     "manufacturer": "OJ WHEELS",
@@ -287,7 +287,7 @@
   {
     "id": 20,
     "title": "OJ Mini Super Juice 60mm, 78a Translucent Purple Cruiser Wheels",
-    "img": "img/OJ-Super-Juice-60mm-78a-Translucent-Purple-Cruiser-Wheels-_314084-back-US.jpg",
+    "img": "img/OJ-Super-Juice-60mm-78a-Translucent-Purple-Cruiser-Wheels-_314084-back-US.png",
     "price": 35,
     "size": 60,
     "manufacturer": "OJ WHEELS",
@@ -301,8 +301,8 @@
   },
   {
     "id": 21,
-    "title": "OJ WInkowski Pro 8 Baller Superjuice 60mm, 78a Black Cruiser Wheels",
-    "img": "img/OJ-Winkowski-Pro-8-Baller-Superjuice-60mm-78a-Black-Cruiser-Wheels-_307394-front-US.jpg",
+    "title": "OJ Winkowski Pro 8 Baller Superjuice 60mm, 78a Black Cruiser Wheels",
+    "img": "img/OJ-Winkowski-Pro-8-Baller-Superjuice-60mm-78a-Black-Cruiser-Wheels-_307394-front-US.png",
     "price": 35,
     "size": 60,
     "manufacturer": "OJ WHEELS",
@@ -317,7 +317,7 @@
   {
     "id": 22,
     "title": "Orangatang Caguama 85mm, 77a Longboard Wheels",
-    "img": "img/Orangatang-Caguama-85mm-77a-Longboard-Wheels-_318746-front-US.jpg",
+    "img": "img/Orangatang-Caguama-85mm-77a-Longboard-Wheels-_318746-front-US.png",
     "price": 68,
     "size": 85,
     "manufacturer": "ORANGATANG WHEELS",
@@ -332,7 +332,7 @@
   {
     "id": 23,
     "title": "Santa Cruz x SpongeBob SquarePants Jellyfishing 60mm, 78a Cruiser Wheels",
-    "img": "img/Santa-Cruz-x-SpongeBob-SquarePants-Jellyfishing-60mm-78a-Cruiser-Wheels-_322580-front-US.jpg",
+    "img": "img/Santa-Cruz-x-SpongeBob-SquarePants-Jellyfishing-60mm-78a-Cruiser-Wheels-_322580-front-US.png",
     "price": 35,
     "size": 60,
     "manufacturer": "SANTA CRUZ SKATEBOARDS",
@@ -347,7 +347,7 @@
   {
     "id": 24,
     "title": "Primitive x Dragon Ball Super 52mm, 101a Blue Skateboard Wheels",
-    "img": "img/Primitive-x-Dragon-Ball-Super-52mm-101a-Blue-Skateboard-Wheels-_330976-front-US.jpg",
+    "img": "img/Primitive-x-Dragon-Ball-Super-52mm-101a-Blue-Skateboard-Wheels-_330976-front-US.png",
     "price": 30,
     "size": 52,
     "manufacturer": "PRIMITIVE SKATEBOARDS",
@@ -362,7 +362,7 @@
   {
     "id": 25,
     "title": "Bones Reds Skateboard Bearings",
-    "img": "img/Bones-Reds-Skateboard-Bearings-_072579-0007-front.jpg",
+    "img": "img/Bones-Reds-Skateboard-Bearings-_072579-0007-front.png",
     "price": 19,
     "size": 0,
     "manufacturer": "BONES",
@@ -377,7 +377,7 @@
   {
     "id": 26,
     "title": "Bones Speed Cream - Bearing Lubricant",
-    "img": "img/Bones-Speed-Cream-_074018-front.jpg",
+    "img": "img/Bones-Speed-Cream-_074018-front.png",
     "price": 8,
     "size": 4,
     "manufacturer": "BONES",
@@ -392,7 +392,7 @@
   {
     "id": 27,
     "title": "Rush Abec 7 Skateboard Bearings",
-    "img": "img/Rush-Abec-7-Skateboard-Bearings-_135233-back-US.jpg",
+    "img": "img/Rush-Abec-7-Skateboard-Bearings-_135233-back-US.png",
     "price": 10,
     "size": 0,
     "manufacturer": "RUSH BEARINGS",
@@ -407,7 +407,7 @@
   {
     "id": 28,
     "title": "Spitfire Cheapshot Skateboard Bearings",
-    "img": "img/Spitfire-Cheapshot-Skateboard-Bearings-_174294-0001-front.jpg",
+    "img": "img/Spitfire-Cheapshot-Skateboard-Bearings-_174294-0001-front.png",
     "price": 10,
     "size": 0,
     "manufacturer": "SPITFIRE WHEELS",

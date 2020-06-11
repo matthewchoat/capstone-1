@@ -56,8 +56,8 @@ export default function Navbar() {
           My Pack
         </Button>
       </Link>
+
       <Link to="/Admin" className="nav-link">
-        
         <AdminButton>
           <span className="mr-2">
             <i className="fa fa-archive" />
@@ -108,7 +108,7 @@ transition: all 300ms ease-in-out;
 }
 &:focus {
   outline: none;
-}
+}-0
 `;
 
 const NavWrapper = styled.nav`
