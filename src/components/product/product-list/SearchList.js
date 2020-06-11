@@ -42,12 +42,11 @@ export default function SearchList() {
     <>
       <div className="py-5">
         <div className="container">
-
               <Title name="Your Search" title="is our Desire" />
-            <strong>Search by Name, Serial Number, Size, or Manufacturer:</strong> 
-            <input onChange={e => handleChange(e.target.value)} />
+            <p><strong>Search by Name, Category, Serial Number, Size, or Manufacturer: </strong>
+            <input onChange={e => handleChange(e.target.value)} /></p>
                 {filterDisplay.map((product, i) => (
-                  <div className="row" key={i}>
+                  <div key={i}>
                     <ProductItem key={product.id} product={product}  />
                   </div>
                 ))}
