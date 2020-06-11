@@ -12,6 +12,7 @@ import LongboardList from './components/product/product-list/LongboardList';
 import BearingsList from './components/product/product-list/BearingsList';
 import TrucksList from './components/product/product-list/TrucksList';
 import WheelsList from './components/product/product-list/WheelsList';
+import SearchList from './components/product/product-list/SearchList';
 import Admin from './components/admin/Admin';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/bearings" component={BearingsList} />
         <Route exact path="/trucks" component={TrucksList} />
         <Route exact path="/wheels" component={WheelsList} />
+        <Route exact path="/search" component={SearchList} />
         <Route exact path="/admin" component={Admin} />
         <Route exact path="/details" component={Details} />
         <Route exact path="/pack" component={Pack} />

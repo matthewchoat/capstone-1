@@ -22,21 +22,29 @@ export default function Navbar() {
         <div className="dropdown">
             <FilterButton type="button" className="btn dropdown-toggle" data-toggle="dropdown">
             <span className="mr-2">
-            <i className="fa fa-search" />
+            <i className="fa fa-cubes" />
             </span>
-              Search Store
+              Filter by Type
             </FilterButton>
             <div className="dropdown-menu">
               <Link to="/" className="dropdown-item">All Products</Link>
               <Link to="/longboard" className="dropdown-item">Pre-built Longboards</Link>
-              <Link to="/" className="dropdown-item">Trucks</Link>
-              <Link to="/" className="dropdown-item">Wheels</Link>
-              <Link to="/" className="dropdown-item">Bearings</Link>
+              <Link to="/trucks" className="dropdown-item">Trucks</Link>
+              <Link to="/wheels" className="dropdown-item">Wheels</Link>
+              <Link to="/bearings" className="dropdown-item">Bearings</Link>
             </div>
           </div>
         </li>
         <li className="nav-item ml-5">
-          
+        <Link to="/search" className="nav-link">
+        
+        <FilterButton>
+          <span className="mr-2">
+            <i className="fa fa-search-plus" />
+          </span>
+          Search Products
+        </FilterButton>
+      </Link>
         </li>
       </ul>
           
