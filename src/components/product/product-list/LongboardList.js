@@ -11,6 +11,7 @@ export default function LonboardList() {
   const productItems = products.filter(product => product.category === filteredItem).map(product => (
     <ProductItem key={product.id} product={product} />
   ));
+
   return (
     <>
       <div className="py-5">
@@ -20,7 +21,6 @@ export default function LonboardList() {
           <div className="row">{productItems}</div>
         </div>
       </div>
-
 
     </>
   );
