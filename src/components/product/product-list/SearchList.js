@@ -44,7 +44,7 @@ export default function SearchList() {
         <div className="container">
               <Title name="Your Search" title="is our Desire" />
             <p><strong>Search by Name, Category, Serial Number, Size, or Manufacturer: </strong>
-            <input onChange={e => handleChange(e.target.value)} /></p>
+            <input placeholder="Search for anything!" onChange={e => handleChange(e.target.value)} /></p>
                 {filterDisplay.map((product, i) => (
                   <div key={i}>
                     <ProductItem key={product.id} product={product}  />
