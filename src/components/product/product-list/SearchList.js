@@ -20,7 +20,7 @@ export default function SearchList() {
 
       products.map(product => {
         const title = product.title.toLowerCase()
-        const serial = product.SerialNum
+        const serial = product.serialnum
           if (title.search(word) !== -1) {
             newList.push(product)
           }

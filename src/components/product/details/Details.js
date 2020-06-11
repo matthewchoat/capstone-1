@@ -17,7 +17,7 @@ export default function Details() {
   const { modalActions } = useModalState();
   const { openModal } = modalActions;
 
-  const { id, title, img, price, manufacturer, info, inPack, category, quantity, SerialNum } = productDetails;
+  const { id, title, img, price, manufacturer, info, inPack, category, quantity, serialnum } = productDetails;
   return (
     <div className="container py-5">
 
@@ -60,7 +60,7 @@ export default function Details() {
             </Button>
           </div>
           <p className="text-title font-weight-bold mt-3 mb-0">
-            SERIAL #: {SerialNum}
+            SERIAL #: {serialnum}
           </p>
           <p className="text-title font-weight-bold mt-3 mb-0">
             PRODUCT SUMMARY:
