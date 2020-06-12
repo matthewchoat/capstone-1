@@ -37,8 +37,7 @@ I also needed to find out how to make auto-zoom images, and found the "Scale" cs
 *DIFFICULT TASKS: 
 <p>
 State-less hooks VS API/REDUX:
-When looking up information on React and store/shopping cart functionality, I researched some examples that used Context API and Redux. I built a basic file structure by reading some Redux resources, however, I had to do serious refactoring while following along to change the class examples to functions and hooks. The only class in my application is the PayPal button class, which is a requirement of the react-paypal-button library I was using. Truly understanding the differences in state management between Redux and React Hooks is something I would like to learn more about in the future. This was just a lot of information to learn at one time. I think my application can be refactored to not include Global States or Redux and instead using React Hooks for passing props. But I am glad that at least now I am exposed to these technologies as I'm sure we will be using them later.
- </p>
+When looking up information on React and store/shopping cart functionality, I researched some examples that used Context API and Redux. I built a basic file structure by reading some Redux resources, however, I had to do serious refactoring while following along to change the class examples to functions and hooks. The only class in my application is the PayPal button class, which is a requirement of the react-paypal-button library I was using. Truly understanding the differences in state management between Redux and React Hooks is something I would like to learn more about in the future. This was just a lot of information to learn at one time. I think my application can be refactored to not include Global States or Redux and instead use only React Hooks for passing props. But I am glad that at least now I am exposed to these technologies as and will continue learning and experimenting with them on my own.
 <p>
 * PayPal Checkout: It seemed like every change I made would cause the paypal server to reject my data on checkout. I also had some trouble correctly calculating the Total price when it was sent to paypal. Those issues seem to be resolved, and the test server is working: Just use the PayPal Development server "USER ID" and "PASSWORD" commented out in the PayPal.js component to purchase items.
  </p>
@@ -59,11 +58,11 @@ I've also added a separate Search page that is able to search products by any ma
     4. Reflection / Refactor
 </h2>
   <p>
-*I think my biggest blocker starting this project was conceptualizing my final result as a "front end only" app. When dealing with online marketplaces and admin pages, not having it connect to a back end or being able to create user accounts to grant specific view/edit permissions was frusterating. I'm using to working with Ruby on Rails web applications that utilize PostgreSQL databases for account creation and data storage.
+*I think my biggest blocker starting this project was conceptualizing my final result as a "front end only" app. When dealing with online marketplaces and admin pages, not having it connect to a back end or being able to create user accounts to grant specific view/edit permissions was frusterating. I'm used to working with Ruby on Rails web applications that utilize PostgreSQL databases for account creation and data storage.
 *
  </p>
  <p>
-*I'm definitely going to need to refactor this application to cut down the extra files and use only React Hooks + Context API to accomplish all the actions. I would ultimately like to replace the reducer, global state, and action files with React Hooks to accomplish this, but it will take more time than I had before this project was due. This was definitely a learning process, and I'm excited to continue learning more about React and Redux.
+*I'm definitely going to need to refactor this application to cut down the extra files, such as the category filter pages, and use only React Hooks + Context API to accomplish all the actions. I would ultimately like to replace the reducer, global state, and action files with React Hooks to accomplish this, but it will take more time than I had before this project was due. This was definitely a learning process, and I'm excited to continue learning more about React and Redux.
  <p>
 *I would also like to add toasts for actions like adding to cart and completing payments, just didn't have time due to some QA issues with my search features. I plan to implement styled toasts using the Toastify library.
 </p>
