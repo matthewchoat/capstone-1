@@ -1,7 +1,7 @@
+//This component is where we render the product card display on the main page
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import dropbg from './liquiddrops.jpg';
 
 import {
@@ -64,17 +64,6 @@ export default function ProductItem({ product }) {
   );
 }
 
-ProductItem.propTypes = {
-  product: PropTypes.shape({
-    id: PropTypes.number,
-    img: PropTypes.string,
-    title: PropTypes.string,
-    price: PropTypes.number,
-    inPack: PropTypes.bool,
-    category: PropTypes.string
-
-  }).isRequired
-};
 
 const Product = styled.div`
   .card {

@@ -1,3 +1,4 @@
+//main display for the pack (cart)
 import React from 'react';
 import Title from '../common/Title';
 import PackColumns from './PackColumns';
@@ -12,6 +13,7 @@ export default function Pack() {
   const { pack } = packState;
   let content;
   content =
+  //as long as the pack contains items, display it
     pack.length > 0 ? (
       <>
         <Title title="Your pack" />
@@ -26,6 +28,7 @@ export default function Pack() {
         <PackTotal packState={packState} packActions={packActions} history={pack.history} />
       </>
     ) : (
+    //otherwise, run the EmptyPack display
       <EmptyPack />
     );
   return content;

@@ -1,3 +1,4 @@
+//This component renders the columns for our pack view
 import React from 'react';
 
 export default function PackColumns() {

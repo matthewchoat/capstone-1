@@ -1,3 +1,4 @@
+// This will be my default product view
 import React from 'react';
 import ProductItem from '../product-item/ProductItem';
 import Title from '../../common/Title';
@@ -15,7 +16,7 @@ export default function ProductList() {
     <>
       <div className="py-5">
         <div className="container">
-
+ {/* Displaying my main title and rendering product cards */}
               <Title name="Welcome to" title="Liquid Longboards" />
               <div className="row">{productItems}</div>
              

@@ -1,3 +1,4 @@
+//This view is similar to my ProductList but filtering the product category to 'bearings'
 import React from 'react';
 import ProductItem from '../product-item/ProductItem';
 import Title from '../../common/Title';

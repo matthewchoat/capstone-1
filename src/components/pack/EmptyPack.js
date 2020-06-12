@@ -1,3 +1,5 @@
+//Pass in this view when our pack is empty
+
 import React from 'react';
 
 export default function EmptyPack() {

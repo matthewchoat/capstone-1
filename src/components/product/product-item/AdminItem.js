@@ -1,7 +1,8 @@
+//This component is similar to our ProductItem component but instead of allowing you to add to cart,
+//it allows administrators to add and remove product quantity
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import dropbg from './liquiddrops.jpg';
 
 import {
@@ -12,6 +13,8 @@ export default function AdminItem({ product }) {
   let { id, title, img, quantity, } = product;
   const { productActions } = useProductState();
   const { setProductDetails } = productActions;
+
+  //declaring our add and decrease quantity variables
   const addQuant = () =>  {product.quantity++};
   const decQuant = () =>  {product.quantity--};
   return (
@@ -57,17 +60,6 @@ export default function AdminItem({ product }) {
   );
 }
 
-AdminItem.propTypes = {
-  product: PropTypes.shape({
-    id: PropTypes.number,
-    img: PropTypes.string,
-    title: PropTypes.string,
-    price: PropTypes.number,
-    inPack: PropTypes.bool,
-    category: PropTypes.string
-
-  }).isRequired
-};
 
 const Product = styled.div`
   .card {
