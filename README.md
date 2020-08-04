@@ -35,7 +35,7 @@ The App must be created using the <code>React.js</code> framework.
     - Price
     - Manufacturer
     - Category / Tag
-- A Shopping Cart View that allows for Purchase Functionality
+- A Shopping Pack View that allows for Purchase Functionality
 - Search Functionality By Product Name 
 - Allow customers to purchase multiple quantities of the same item.
 - Must have at least 10 items in the inventory

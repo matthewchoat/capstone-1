@@ -1,0 +1,104 @@
+/* These are my main variable colors I'm using throughout the application. */
+:root {
+  --mainYellow: #a6cf10;
+  --mainBlue: #0a3846;
+  --lightBlue: #29e9df;
+  --mainDark: #20252c;
+  --mainWhite: #f0eaea;
+ 
+}
+/* making the default font Open Sans and making the default background the wave image */
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  background: url("wave4k.jpg") repeat !important;
+  color: var(--mainDark) !important;
+  
+}
+/*Style for headings using Audiowide font*/
+h3 {
+  font-family: 'Audiowide', cursive !important;
+  letter-spacing: 0.1rem !important;
+  font-size: 1.4rem !important;
+  margin-top: .5rem !important;
+  margin-bottom: .5rem !important;
+}
+
+h4 {
+  letter-spacing: 0.1rem !important;
+  font-size: 1.4rem !important;
+  margin-top: .5rem !important;
+  margin-bottom: .5rem !important;
+}
+
+.text-title {
+  font-family: 'Audiowide', cursive;
+  letter-spacing: 0.1rem;
+}
+
+.text-blue {
+  color: var(--mainBlue);
+  font-family: 'Audiowide', cursive;
+}
+
+.text-bright-blue {
+  color: var(--lightBlue);
+}
+
+.text-red {
+  color: darkred;
+  font-family: 'Audiowide', cursive;
+}
+
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
+  transition: all 300ms linear !important;
+}
+
+.btn-black:hover {
+  background: var(--mainDark) !important;
+  color: var(--mainWhite) !important;
+}
+
+.pack-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainYellow);
+}
+
+.dropdown-menu a {
+  color: var(--mainBlue);
+  background: rgb(187, 237, 240);
+  padding: 12px 16px;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  margin: 0.2rem 0.2rem 0.2rem 0;
+  transition: all 300ms ease-in-out;
+  border: 0.09rem solid var(--mainYellow) !important;
+}
+.dropdown-menu {
+  background-color: var(--mainYellow);
+  min-width: 160px;
+  z-index: 1;
+  background: transparent !important;}
+
+ .dropdown-item:hover {
+    background: var(--mainYellow) !important;
+    color: var(--mainWhite) !important;
+  }
+  .dropdown-item:focus {
+    outline: none;
+  }
+
+/* Change color of dropdown links on hover */
+.dropdown-menu a:hover {
+  background-color: var(--mainYellow);
+  border: 0.09rem solid var(--mainWhite) !important;
+}
